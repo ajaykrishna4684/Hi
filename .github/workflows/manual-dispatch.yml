@@ -14,4 +14,4 @@ jobs:
           echo "${{github.ref}}" >>$GITHUB_OUTPUT
           echo "AJAY" >>$GITHUB_OUTPUT
       - name: Print GITHUB_OUTPUT
-        run: echo ${{ GITHUB_OUTPUT }}
+        run: cat GITHUB_OUTPUT 
