@@ -9,5 +9,4 @@ jobs:
     steps:
       - name: Print "github"
         run: |
-          echo "${{ toJSON(github) }}"
           echo "${{ github.action	}}"
