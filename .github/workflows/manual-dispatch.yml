@@ -7,5 +7,5 @@ jobs:
   print-hi:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Hi
-        run: echo "Hi"
+      - name: Print "github"
+        run: echo "${{ github }}"
