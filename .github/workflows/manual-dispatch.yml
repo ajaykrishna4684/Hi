@@ -1,12 +1,7 @@
-name: Print GitHub Context
-
-on:
-  workflow_dispatch:
-
+name: My First Work Flow
+on: 
+  - push
+runs-on: ubuntu-latest
 jobs:
-  print-context:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Dump GitHub context
-        run: |
-          echo '${{ toJson(github) }}' | jq .
+- name: Print Hi
+  run: echo "Hi"
