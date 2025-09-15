@@ -15,6 +15,7 @@ jobs:
           echo "Hi" 
   print-hello:
     runs-on: ubuntu-latest
+    needs: print-hi
     steps:
       - name: Print "Hello"
         run: | 
