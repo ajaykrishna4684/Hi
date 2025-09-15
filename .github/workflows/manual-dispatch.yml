@@ -1,7 +1,11 @@
 name: My First Work Flow
+
 on: 
-  - push
+  push:
 runs-on: ubuntu-latest
 jobs:
-- name: Print Hi
-  run: echo "Hi"
+  print-hi:
+    
+    steps:
+      - name: Print Hi
+        run: echo "Hi"
