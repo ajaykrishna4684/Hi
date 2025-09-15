@@ -3,7 +3,7 @@ name: My First Work Flow
 on: 
   push:
     branches:
-    - 'aj*'
+    - 'aj/*'
  
 jobs:
   print-hi:
