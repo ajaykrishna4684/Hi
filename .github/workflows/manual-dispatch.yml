@@ -11,4 +11,7 @@ jobs:
     steps:
       - name: Print "github"
         run: |
-          echo "${{github.ref}}"
+          echo "${{github.ref}}" >>$GITHUB_OUTPUT
+          echo "AJAY" >>$GITHUB_OUTPUT
+      - name: Print GITHUB_OUTPUT
+        run: echo ${{ GITHUB_OUTPUT }}
