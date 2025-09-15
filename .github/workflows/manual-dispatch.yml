@@ -2,11 +2,13 @@ name: My First Work Flow
 
 on: 
   push:
-
+    branches:
+    - 'aj*'
+ 
 jobs:
   print-hi:
     runs-on: ubuntu-latest
     steps:
       - name: Print "github"
         run: |
-          echo "$(pwd)"
+          echo "${{github.ref}}"
