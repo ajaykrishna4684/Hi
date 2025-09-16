@@ -13,7 +13,7 @@ jobs:
       - name: echo 
         run: echo "age=35" >> $GITHUB_ENV
       - name: echo
-        run: echo $P
+        run: echo ${{ $vars.p }}
 
 
   print-hello:
