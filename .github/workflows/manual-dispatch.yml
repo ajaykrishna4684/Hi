@@ -1,10 +1,11 @@
 name: My First Work Flow
 on: 
   push:
-environment: prod
+
 jobs:
   print-hi:
     runs-on: ubuntu-latest
+    environment: prod
     steps:
       - name: echo 
         id: check
