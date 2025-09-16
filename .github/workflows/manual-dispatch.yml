@@ -7,4 +7,4 @@ jobs:
     steps:
       - name: Print "github"
         run: |
-          echo "${{ github.action_repository	 }}
+          echo "${{ github.action_repository}}""
