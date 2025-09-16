@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo 
+        id: check
         run: echo "name=Ajay" >> $GITHUB_OUTPUT
       - name: echo 
         run: echo "age=35" >> $GITHUB_ENV
@@ -14,4 +15,10 @@ jobs:
       - name: echo 
         run: echo $age
       - name: echo 
-        run: echo $name
+        run: echo ${{ steps.check.outputs.name}}
+
+  print-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo 
+        run: echo "$age"
