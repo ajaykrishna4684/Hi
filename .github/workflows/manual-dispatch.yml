@@ -12,7 +12,7 @@ jobs:
         run: echo "age=35" >> $GITHUB_ENV
       - name: echo
         env:
-          gender="M"
+          gender: "M"
         run: echo $gender
 
 
