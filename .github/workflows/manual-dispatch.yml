@@ -13,3 +13,5 @@ jobs:
         run: ls
       - name: echo 
         run: echo $age
+      - name: echo 
+        run: echo $name
