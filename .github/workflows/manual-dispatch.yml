@@ -1,6 +1,7 @@
 name: My First Work Flow
 on: 
   push:
+environment: prod
 jobs:
   print-hi:
     runs-on: ubuntu-latest
@@ -11,9 +12,7 @@ jobs:
       - name: echo 
         run: echo "age=35" >> $GITHUB_ENV
       - name: echo
-        env:
-          gender: "M"
-        run: echo $gender
+        run: echo $D
 
 
   print-hello:
