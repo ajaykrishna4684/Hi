@@ -5,6 +5,9 @@ jobs:
   print-hi:
     runs-on: ubuntu-latest
     steps:
-      - name: Print "github"
-        run: |
-          echo "${{ github.env }}"
+      - name: echo 
+        run: echo "name=Ajay" >> $GITHUB_OUTPUT
+      - name: echo 
+        run: echo "age=35" ?? $GITHUB_env
+      - name: latest
+        run: ls
