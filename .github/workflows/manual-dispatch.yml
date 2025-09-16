@@ -8,7 +8,7 @@ jobs:
       - name: echo 
         run: echo "name=Ajay" >> $GITHUB_OUTPUT
       - name: echo 
-        run: echo "age=35" >> $GITHUB_env
+        run: echo "age=35" >> $GITHUB_ENV
       - name: latest
         run: ls
       - name: echo 
